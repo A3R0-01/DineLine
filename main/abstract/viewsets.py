@@ -4,4 +4,4 @@ from rest_framework import filters
 class AbstractViewset(viewsets.ModelViewSet):
     filter_backends = [filters.OrderingFilter]
     ordering_fields = ['Updated', 'Created']
-    ordering = ['-Updated']
+    ordering = ['-Created']

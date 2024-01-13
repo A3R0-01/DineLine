@@ -44,6 +44,11 @@ INSTALLED_APPS = [
     'main.auth',
     'main.tables',
     'main.customers',
+    'main.categories',
+    'main.menu',
+    'main.orders',
+    'main.foodorders',
+    'main.clearance',
 ]
 
 MIDDLEWARE = [

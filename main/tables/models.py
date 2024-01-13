@@ -2,6 +2,18 @@ from django.db import models
 from main.abstract.models import AbstractManager, AbstractModel
 # Create your models here.
 class TableManager(AbstractManager):
+    def clear_table(self, PublicId):
+        if PublicId is None:
+            raise TypeError('Table must have an Id')
+        table = self.get(PublicId = PublicId)
+        table.TableStatus = False
+        table.save()
+    def occupy_table(self, PublicId):
+        if PublicId is None:
+            raise TypeError('Table must have an Id')
+        table = self.get(PublicId = PublicId)
+        table.TableStatus = True
+        table.save()
     pass
 
 class Table(AbstractModel):
