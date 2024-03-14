@@ -5,7 +5,7 @@ from rest_framework.status import HTTP_201_CREATED
 from rest_framework.response import Response
 from rest_framework.exceptions import ValidationError
 from .models import Category
-from .serializers import CategoriesSerializer
+from .serializers import CategoriesSerializer, SingleMenuSerializer
 
 # Create your views here.
 class CategoryViewset(AbstractViewset):
@@ -33,3 +33,12 @@ class CategoryViewset(AbstractViewset):
         else: raise ValidationError('You Are Not authorized to create a Category')
 
 
+class SingleMenuViewSet(AbstractViewset):
+    http_method_names = ('get',)
+    permission_classes = (IsAuthenticated,)
+    serializer_class = SingleMenuSerializer
+
+    def get_object(self):
+        obj = Category.objects.get_by_id(self.kwargs['pk'])
+        self.check_object_permissions(self.request, obj)
+        return obj

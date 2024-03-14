@@ -1,0 +1,8 @@
+Django
+psycopg2-binary
+djangorestframework
+django-filter
+pillow
+djangorestframework-simplejwt
+drf-nested-routers
+django-cors-headers

@@ -34,13 +34,3 @@ class MenuViewSet(AbstractViewset):
             return Response(serializer.data, status=HTTP_201_CREATED)
         else: raise ValidationError('You Are Not authorized to create a Menu Item')
 
-class MenuFilterViewSet(ViewSet):
-    permission_classes = (IsAuthenticated,)
-    http_method_names = ('post',)
-
-
-    def create(self, request):
-        public_id = request.data['CategoryId']
-        queryset = Menu.objects.get_by_category(public_id)
-        return Response(queryset.values())
-
