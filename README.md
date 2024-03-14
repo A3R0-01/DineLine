@@ -59,7 +59,14 @@ The API provides the following endpoints:
 - `/auth/login/`: Obtain an authentication token.
 - `/auth/logout/`: Blacklist the current token to log out.
 - `/users/`: Manage user accounts (CRUD operations).
-- `/posts/`: Manage blog posts (CRUD operations).
-- `/comments/`: Manage comments on blog posts (CRUD operations).
+- `/table/`: Manage tables in the restaurant (CRUD operations).
+- `/tables/` : List out tables in the restaurant.
+- `/customer/` : Manage tables in the restaurant (CRUD operations).
+- `/category/` : Manage tables in the restaurant (CRUD operations).
+- `/menu/` : Manage tables in the restaurant (CRUD operations).
+- `/order/` : Manage tables in the restaurant (CRUD operations).
+- `/foodorder/` : Manage tables in the restaurant (CRUD operations).
+- `/clearance/` : Manage tables in the restaurant (CRUD operations).
+- `/clearances/` : List out clearancies for customers.
 
 For detailed information about request formats, response structures, and required permissions, please refer to the API documentation or interact with the API using tools like Postman or cURL.
