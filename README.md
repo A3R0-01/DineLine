@@ -47,7 +47,6 @@ To get started with this API, follow these steps:
 - **CRUD Operations**: Perform Create, Read, Update, and Delete operations on various resources.
 - **Validation and Error Handling**: Handle input validation and provide comprehensive error messages.
 - **Pagination and Filtering**: Retrieve data in paginated form and apply filters for efficient data retrieval.
-- **Unit Testing**: Comprehensive unit tests to ensure the reliability and correctness of the API.
 
 ## Authentication
 This API uses JSON Web Tokens (JWT) for authentication. To access protected endpoints, you need to include the JWT token in the `Authorization` header of your requests. The token can be obtained by authenticating with valid credentials using the `/auth/login/` endpoint. The generated token should be included in subsequent requests as follows:
