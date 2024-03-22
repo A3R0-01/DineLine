@@ -55,18 +55,18 @@ Authorization: Bearer <token>
 ## Endpoints
 The API provides the following endpoints:
 
-- `/auth/register/`: Register a new user.
-- `/auth/login/`: Obtain an authentication token.
-- `/auth/logout/`: Blacklist the current token to log out.
-- `/users/`: Manage user accounts (CRUD operations).
-- `/table/`: Manage tables in the restaurant (CRUD operations).
-- `/tables/` : List out tables in the restaurant.
-- `/customer/` : Manage tables in the restaurant (CRUD operations).
-- `/category/` : Manage tables in the restaurant (CRUD operations).
-- `/menu/` : Manage tables in the restaurant (CRUD operations).
-- `/order/` : Manage tables in the restaurant (CRUD operations).
-- `/foodorder/` : Manage tables in the restaurant (CRUD operations).
-- `/clearance/` : Manage tables in the restaurant (CRUD operations).
-- `/clearances/` : List out clearancies for customers.
+- `api/auth/register/`: Register a new user.
+- `api/auth/login/`: Obtain an authentication token.
+- `api/auth/logout/`: Blacklist the current token to log out.
+- `api/users/`: Manage user accounts (CRUD operations).
+- `api/table/`: Manage tables in the restaurant (CRUD operations).
+- `api/tables/` : List out tables in the restaurant.
+- `api/customer/` : Manage tables in the restaurant (CRUD operations).
+- `ap/category/` : Manage tables in the restaurant (CRUD operations).
+- `api/menu/` : Manage tables in the restaurant (CRUD operations).
+- `api/order/` : Manage tables in the restaurant (CRUD operations).
+- `api/foodorder/` : Manage tables in the restaurant (CRUD operations).
+- `api/clearance/` : Manage tables in the restaurant (CRUD operations).
+- `api/clearances/` : List out clearancies for customers.
 
 For detailed information about request formats, response structures, and required permissions, please refer to the API documentation or interact with the API using tools like Postman or cURL.
